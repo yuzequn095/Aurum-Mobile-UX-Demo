@@ -1,0 +1,107 @@
+import { Transaction, Account, PortfolioData } from './types';
+
+export const PORTFOLIO_DATA: PortfolioData[] = [
+  { date: 'Jan 24', value: 1800000, benchmark: 1750000 },
+  { date: 'Feb 24', value: 1950000, benchmark: 1800000 },
+  { date: 'Mar 24', value: 2100000, benchmark: 1900000 },
+  { date: 'Apr 24', value: 2050000, benchmark: 1950000 },
+  { date: 'May 24', value: 2300000, benchmark: 2050000 },
+  { date: 'Jun 24', value: 2250000, benchmark: 2100000 },
+  { date: 'Jul 24', value: 2450000, benchmark: 2200000 },
+];
+
+export const TRANSACTIONS: Transaction[] = [
+  {
+    id: '1',
+    title: 'Private Design Retainer',
+    category: 'REVENUE',
+    subcategory: 'Consultancy',
+    amount: 8500,
+    date: '24 Oct 2023',
+    type: 'revenue',
+    initials: 'PDR',
+  },
+  {
+    id: '2',
+    title: 'The Organic Market',
+    category: 'LIFESTYLE',
+    subcategory: 'Groceries',
+    amount: -162.4,
+    date: '23 Oct 2023',
+    type: 'expense',
+    initials: 'OM',
+  },
+  {
+    id: '3',
+    title: 'Elite Transport',
+    category: 'TRAVEL',
+    subcategory: 'Executive Car',
+    amount: -420,
+    date: '21 Oct 2023',
+    type: 'expense',
+    initials: 'ET',
+  },
+  {
+    id: '4',
+    title: 'Vogue Subscription',
+    category: 'MEDIA',
+    subcategory: 'Entertainment',
+    amount: -12.99,
+    date: '19 Oct 2023',
+    type: 'expense',
+    initials: 'VS',
+  },
+  {
+    id: '5',
+    title: 'Artisan Coffee',
+    category: 'LIFESTYLE',
+    subcategory: 'Dining',
+    amount: -18.5,
+    date: '18 Oct 2023',
+    type: 'expense',
+    initials: 'AC',
+  },
+];
+
+export const ACCOUNTS: Account[] = [
+  {
+    id: '1',
+    institution: 'WELLS FARGO',
+    name: 'Platinum Checking',
+    balance: 125000,
+    lastFour: '4589',
+    type: 'checking',
+  },
+  {
+    id: '2',
+    institution: 'WELLS FARGO',
+    name: 'High Yield Savings',
+    balance: 225000,
+    lastFour: '1290',
+    type: 'savings',
+  },
+  {
+    id: '3',
+    institution: 'WEBULL',
+    name: 'Individual Brokerage',
+    balance: 1450000,
+    lastFour: '8832',
+    type: 'brokerage',
+  },
+  {
+    id: '4',
+    institution: 'WEBULL',
+    name: 'Roth IRA',
+    balance: 350000,
+    lastFour: '9941',
+    type: 'ira',
+  },
+  {
+    id: '5',
+    institution: 'COINBASE',
+    name: 'Crypto Vault',
+    balance: 300000,
+    lastFour: 'Digital Assets',
+    type: 'crypto',
+  },
+];
